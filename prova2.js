@@ -39,3 +39,15 @@ console.log(typeof a,
         }
     }
     console.log("stampatot", carrello.getTotale())
+
+
+    function facciamoCose(input){
+        console.log("abbiamo fatto: ", input)
+    }
+
+    function facciamoCoseDefault(){
+        facciamoCose("Default")
+    }
+
+    facciamoCose("aaaaa")
+    facciamoCoseDefault()
