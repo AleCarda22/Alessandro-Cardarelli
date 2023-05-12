@@ -28,14 +28,14 @@ console.log(typeof a,
                 prezzo: 1700,
                 qty: 1
             }
-    
         ],
-        getTotal(){
-            for(let i=0;1<prodotti.length;i++){
+        getTotale(){
+            let totale=0
+            for(let i=0;i<this.prodotti.length;i++){
                 const prodotto = this.prodotti[i];
                 totale += prodotto.prezzo * prodotto.qty;
             }
             return totale
         }
     }
-    console.log("stampatot", carrello.getTotal)
+    console.log("stampatot", carrello.getTotale())
